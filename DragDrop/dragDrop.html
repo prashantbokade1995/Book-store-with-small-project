@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Drag Drop</title>
+    
+</head>
+<style>
+    body {
+    background: blue;
+}
+
+.imgBox {
+    background-image: url(hirePic.jpg);
+    position: relative;
+    top: 7px;
+    left: 5px;
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.whiteBox {
+    display: inline-block;
+    height: 155px;
+    width: 155px;
+    margin: 10px;
+    background-color: white;
+    border: 3px black solid;
+}
+
+.hold {
+    border: solid red 4px;
+}
+
+.dashed {
+    background: rgb(243, 159, 243);
+    border-style: dashed;
+}
+
+.hide {
+    display: none;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../BookStoreProject/BookStore.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Canculator/Calculator.html">Calculator<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../DragDrop/dragDrop.html">DragDrop<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../JobProfile/JobProfile.html">JobProfile<span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class= "whiteBox">
+        <div class="imgBox" draggable="true"></div>
+    </div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+    <div class="whiteBox"></div>
+    
+</body  onload="updateClock();
+setInterval('updateClock()',1000)">
+    <div id="clock">
+
+    </div>>
+<script src="./dragDrop.js"></script>
+
+</html>
